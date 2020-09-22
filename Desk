@@ -1,0 +1,76 @@
+public class Desk {
+private int n;
+    Shape []desk=new Shape[4];
+
+    public void add(Shape desk) {
+        if (n == this.desk.length - 1){
+            System.out.println("Массив заполнен");
+        }
+        this.desk[n++]=desk;
+    }
+
+    public void remove(int l){
+        for (int i=l; i < desk.length-1; i++) {
+            desk[i-1] = desk[i];
+            desk[i] = null;
+        }
+    }
+
+
+
+    public double calculateSumPer(){
+        double sum=0;
+        for (int d=0;d<n;d++){
+         sum=sum+desk[d].calculatePerimetr();
+        }
+       return sum;
+    }
+
+    double calculateSumArea(){
+        double sum=0;
+        for (int d=0;d<n;d++){
+            sum=sum+desk[d].calculateArea();
+        }
+        return sum;
+    }
+
+
+}
+public class Desk {
+private int n;
+    Shape []desk=new Shape[4];
+
+    public void add(Shape desk) {
+        if (n == this.desk.length - 1){
+            System.out.println("Массив заполнен");
+        }
+        this.desk[n++]=desk;
+    }
+
+    public void remove(int l){
+        for (int i=l; i < desk.length-1; i++) {
+            desk[i-1] = desk[i];
+            desk[i] = null;
+        }
+    }
+
+
+
+    public double calculateSumPer(){
+        double sum=0;
+        for (int d=0;d<n;d++){
+         sum=sum+desk[d].calculatePerimetr();
+        }
+       return sum;
+    }
+
+    double calculateSumArea(){
+        double sum=0;
+        for (int d=0;d<n;d++){
+            sum=sum+desk[d].calculateArea();
+        }
+        return sum;
+    }
+
+
+}
